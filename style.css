@@ -1,0 +1,113 @@
+:root {
+    --bg-dark: #050509;
+    --bg-card: #0d111a;
+    --primary-neon: #00f2ff;
+    --text-main: #e2e8f0;
+    --font-main: 'Poppins', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+body {
+    background-color: var(--bg-dark);
+    background-image: radial-gradient(at 10% 10%, rgba(0, 119, 255, 0.1) 0px, transparent 50%);
+    color: var(--text-main);
+    font-family: var(--font-main);
+    line-height: 1.6;
+}
+/* Esto controla SOLO la imagen que pusiste a la par de tu nombre */
+.neon-title img {
+    width: 300px;           /* Cambia este número para hacerla más pequeña (ej. 40px) */
+    height: 300px;          /* Debe ser igual al anterior */
+    border-radius: 500%;    /* La hace redonda */
+    object-fit: cover;     /* No deja que se estire */
+    vertical-align: middle; /* La alinea con el texto */
+    margin-left: 15px;      /* La separa un poco de tu apellido */
+    border: 2px solid #00f2ff; /* Borde azul fosforescente */
+    box-shadow: 0 0 10px #00f2ff; /* Brillo neón */
+}
+
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+/* Navegación */
+nav {
+    position: fixed;
+    top: 0; width: 100%;
+    background: rgba(5, 5, 9, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0, 242, 255, 0.2);
+}
+
+.nav-container {
+    max-width: 1000px; margin: 0 auto; padding: 15px 20px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+.logo-neon { font-size: 1.5rem; font-weight: 700; color: var(--primary-neon); text-shadow: 0 0 10px var(--primary-neon); text-decoration: none; }
+
+nav ul { display: flex; list-style: none; gap: 20px; }
+
+nav ul a { text-decoration: none; color: #94a3b8; font-size: 0.9rem; }
+
+nav ul a:hover { color: var(--primary-neon); text-shadow: 0 0 5px var(--primary-neon); }
+
+/* Hero */
+header { height: 80vh; display: flex; justify-content: center; align-items: center; text-align: center; }
+
+.neon-title {
+    font-size: 3.5rem; color: #fff;
+    text-shadow: 0 0 10px var(--primary-neon), 0 0 20px var(--primary-neon);
+    margin-bottom: 10px;
+}
+
+.subtitle { letter-spacing: 3px; color: #94a3b8; margin-bottom: 30px; }
+
+.btn-neon {
+    padding: 10px 25px; border: 2px solid var(--primary-neon);
+    color: var(--primary-neon); text-decoration: none; border-radius: 5px;
+    text-transform: uppercase; font-weight: 600;
+}
+
+.btn-neon:hover { background: var(--primary-neon); color: #000; box-shadow: 0 0 20px var(--primary-neon); }
+
+/* Secciones */
+section { padding: 80px 0; }
+
+.neon-subtitle {
+    font-size: 2rem; color: #fff; text-align: center;
+    margin-bottom: 40px; text-shadow: 0 0 10px var(--primary-neon);
+}
+
+.about-card, .contact-card {
+    background: var(--bg-card); padding: 30px;
+    border-radius: 12px; border: 1px solid rgba(0, 242, 255, 0.1);
+    text-align: center;
+}
+
+/* Proyectos Grid */
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+
+.project-card {
+    background: var(--bg-card); padding: 25px; border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.05); transition: 0.3s;
+}
+
+.project-card:hover { transform: translateY(-5px); border-color: var(--primary-neon); }
+
+.project-link { color: var(--primary-neon); text-decoration: none; font-weight: bold; display: block; margin-top: 15px; }
+
+/* Habilidades */
+.skills-wrapper { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; }
+
+.tags { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+
+.tag-tech, .tag-soft {
+    padding: 5px 15px; background: rgba(0, 242, 255, 0.1);
+    border: 1px solid var(--primary-neon); border-radius: 20px; color: var(--primary-neon); font-size: 0.8rem;
+}
+
+.email-link { color: var(--primary-neon); font-weight: bold; text-decoration: none; font-size: 1.2rem; }
+
+footer { text-align: center; padding: 40px; color: #475569; font-size: 0.8rem; }
+
