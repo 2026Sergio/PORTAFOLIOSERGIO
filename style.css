@@ -15,21 +15,20 @@ body {
     font-family: var(--font-main);
     line-height: 1.6;
 }
-/* Esto controla SOLO la imagen que pusiste a la par de tu nombre */
+
 .neon-title img {
-    width: 300px;           /* Cambia este número para hacerla más pequeña (ej. 40px) */
-    height: 300px;          /* Debe ser igual al anterior */
-    border-radius: 500%;    /* La hace redonda */
-    object-fit: cover;     /* No deja que se estire */
-    vertical-align: middle; /* La alinea con el texto */
-    margin-left: 15px;      /* La separa un poco de tu apellido */
-    border: 2px solid #00f2ff; /* Borde azul fosforescente */
-    box-shadow: 0 0 10px #00f2ff; /* Brillo neón */
+    width: 300px;        
+    height: 300px;         
+    border-radius: 500%;    
+    object-fit: cover;   
+    vertical-align: middle; 
+    margin-left: 15px;      
+    border: 2px solid #00f2ff; 
+    box-shadow: 0 0 10px #00f2ff; 
 }
 
 .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
 
-/* Navegación */
 nav {
     position: fixed;
     top: 0; width: 100%;
@@ -71,7 +70,6 @@ header { height: 80vh; display: flex; justify-content: center; align-items: cent
 
 .btn-neon:hover { background: var(--primary-neon); color: #000; box-shadow: 0 0 20px var(--primary-neon); }
 
-/* Secciones */
 section { padding: 80px 0; }
 
 .neon-subtitle {
@@ -85,7 +83,6 @@ section { padding: 80px 0; }
     text-align: center;
 }
 
-/* Proyectos Grid */
 .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
 
 .project-card {
@@ -97,7 +94,7 @@ section { padding: 80px 0; }
 
 .project-link { color: var(--primary-neon); text-decoration: none; font-weight: bold; display: block; margin-top: 15px; }
 
-/* Habilidades */
+
 .skills-wrapper { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; }
 
 .tags { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
